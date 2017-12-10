@@ -6,17 +6,19 @@
      <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href=request_form.php>Submit Request</a></li>
-  <li><a href=main_login.php>Admin Login</a></li>
+  <li><a href=main_login.html>Admin Login</a></li>
 
 </ul>
      </div> 
-<h1>Seton Hall Army ROTC</h1>
+<div style="float: auto;"><IMG SRC="university-logo-desktop.png"></div>
+
+<h2>Army ROTC</h2>
+
 <body> 
   
-<form method="post" action="" style="margin-top: 100px;">
-    Equipment Search: 
-    <input type="text" name="something" value="" placeholder="EquipmentID.."/> <br><br>
-    <input  class="btn btn-lg btn-success btn-block"  style="width:120px; margin:auto;" type="submit" name="submitavailable" value = "Search" />
+<form method="post" action="" style="margin-top: 100px;margin-left:200px;">
+    <input type="text" name="something" value="" placeholder="Search..."/> <br><br>
+    <input  class="btn btn-lg btn-success btn-block"  style="width:120px; margin:auto; " type="submit" name="submitavailable" value = "Search" />
     </form>
 
 
@@ -67,4 +69,4 @@ $db->close();
 </TABLE>
     </div>
  </body>
-</html>
+</div>

@@ -1,3 +1,16 @@
+<?php
+session_start();
+if (!isset($_SESSION['sesh_user']) || $_SESSION['sesh_user'] === '') { 
+
+?>
+
+<script text="text/javascript">
+window.location.href = "main_login.html";
+</script>
+<?php
+}
+
+?>
 <html>
 <head><title>supply</title></head>
     <link rel="stylesheet" href= "css/bootstrap.min.css">
@@ -6,12 +19,13 @@
      <ul>
 <li><a class="active" href=requests.php>Pending Requests</a></li>
 <li><a  href=login_success.php>Admin Home</a></li>
-  <li><a href=rotc.php>Logout</a></li>
+ <li><a href=logout.php>Logout</a></li>
 </ul>
      </div> 
-<h1>Pending Requests</h1>
+    <div style="float: auto;"><IMG SRC="university-logo-desktop.png"></IMG>
+<h2>Pending Requests</h2>
     <body>  
-     <form method="post" action="">
+     <form method="post" action="" style="margin-left:200px;">
          Enter Request ID to resolve request:
          <input type="text" name="requestid" value="" style="margin-top: 100px;">
         <input type="submit" name="resolverequest" value="Resolve Request" class="btn btn-lg btn-success btn-block"  style="width:250px; margin:auto;">
