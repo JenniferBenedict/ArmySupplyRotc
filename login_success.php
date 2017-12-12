@@ -64,7 +64,7 @@ $showtablequery="SELECT * FROM rotcarmy";
 $showtableresult= mysqli_query($link, $showtablequery) 
     or trigger_error($db->error); ?>
         <br>
- <div style="overflow: scroll; height: 500px;">   
+ <div style="overflow: scroll; height: 500px; margin-left:200px; margin-right:200px;">   
 <TABLE class="table">
 <TR>
 <TH>ID</TH>
