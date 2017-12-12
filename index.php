@@ -45,7 +45,7 @@ $result = mysqli_query($link, $query)
     if(isset($_POST['submitavailable'])) {
        // echo 'You entered ', htmlspecialchars($_POST['somethin']);
 //var_dump($result);    ?>
- <div style="overflow: scroll; height: 500px; margin-left:200px; margin-right:200px;">   
+ <div style="overflow: scroll; height: 500px; margin-left:220px; margin-right:120px;">   
 <TABLE class="table">
 <TR>
 <TH>ID</TH>
